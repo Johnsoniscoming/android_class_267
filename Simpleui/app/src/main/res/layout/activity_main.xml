@@ -24,7 +24,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
+    <ImageView
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,30 +32,31 @@
         android:id="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/checkBox" />
+        android:layout_below="@+id/checkBox"
+        android:src="@drawable/button1" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:clickable="false"
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:orientation="horizontal"
-        android:clickable="false">
+        android:layout_alignParentStart="true">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"
-            android:id="@+id/maleRadioButton"
+            android:text="black tea"
+            android:id="@+id/blackteaRadioButton"
             android:checked="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
-            android:id="@+id/femaleRadioButton"
+            android:text="red tea"
+            android:id="@+id/redteaRadioButton"
             android:checked="false"
             android:layout_below="@+id/radioGroup"
             android:layout_alignParentLeft="true"
@@ -71,6 +72,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/radioGroup"
-        android:checked="false" />
+        android:checked="false"
+        android:visibility="gone" />
+
+
 
 </RelativeLayout>
